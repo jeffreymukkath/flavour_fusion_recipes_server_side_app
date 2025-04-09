@@ -1,0 +1,33 @@
+{
+  "name": "server_side",
+  "version": "1.0.0",
+  "description": "server_side code for a recipe website that handles api requests, user authentication, and recipe data management.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "mongodb",
+    "backend",
+    "server",
+    "api",
+    "restful-api",
+    "recipes",
+    "recipe-app",
+    "server-side",
+    "node-backend",
+    "express-api",
+    "crud",
+    "recipe-management"
+  ],
+  "author": "jeffrey anthony mukkath",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0"
+  }
+}
