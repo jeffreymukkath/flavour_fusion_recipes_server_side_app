@@ -2,6 +2,8 @@
 import "dotenv/config";
 // import express framework
 import express from "express";
+// import user route module
+import user_route from "./routes/user.js";
 
 // create an instance of the express application
 const app = express();
@@ -15,6 +17,9 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("hello, world!");
 });
+
+// mount register and login api endpoints under /api/users
+app.use("/api/users", user_route);
 
 try {
   // start the server and listen on the specified port
