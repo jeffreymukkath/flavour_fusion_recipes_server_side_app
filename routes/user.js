@@ -36,6 +36,8 @@ router.post("/register", async (req, res) => {
 
     // insert the new user into the database
     const result = await user_collection.insertOne({
+      profile_picture:
+        "https://res.cloudinary.com/de74jeqj6/image/upload/v1744352477/DEFAULT_PROFILE_PICTURE__1_eyc7xy.jpg",
       first_name: first_name,
       last_name: last_name,
       email: email,
