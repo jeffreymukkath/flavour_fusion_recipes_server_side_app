@@ -4,6 +4,8 @@ import "dotenv/config";
 import express from "express";
 // import user route module
 import user_route from "./routes/user.js";
+// import recipe route module
+import recipe_route from "./routes/recipe.js";
 
 // create an instance of the express application
 const app = express();
@@ -20,6 +22,9 @@ app.get("/", (req, res) => {
 
 // mount register and login api endpoints under /api/users
 app.use("/api/users", user_route);
+// mount recipe related api endpoints under /api/recipes
+// this includes fetching, adding, updating, and deleting recipes
+app.use("/api/recipes", recipe_route);
 
 try {
   // start the server and listen on the specified port
